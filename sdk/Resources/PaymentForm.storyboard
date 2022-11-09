@@ -562,7 +562,6 @@
                         <outlet property="containerBottomConstraint" destination="T09-C8-kzS" id="fmE-qZ-z2L"/>
                         <outlet property="containerView" destination="HGh-3C-ngX" id="W5k-7a-Ygj"/>
                         <outlet property="payWithCardButton" destination="Ds8-4r-6Pa" id="DN2-cU-CVW"/>
-                        <outlet property="yandexPayContainer" destination="Sif-lV-jYy" id="1tb-cE-xIf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uLp-Mv-jOF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

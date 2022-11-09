@@ -23,7 +23,7 @@ public class PaymentConfiguration {
         self.paymentUIDelegate = PaymentUIDelegateImpl.init(delegate: uiDelegate)
         self.scanner = scanner
         self.useDualMessagePayment = useDualMessagePayment
-        self.disableApplePay = disableApplePay
-        self.disableYandexPay = disableYandexPay
+        self.disableApplePay = true
+        self.disableYandexPay = true
     }
 }
