@@ -65,8 +65,9 @@ public class PaymentCardForm: PaymentForm {
         let paymentData = self.configuration.paymentData
 
         self.emailTextField.isHidden = false
-        if paymentData.email != nil && !paymentData.email.isEmpty {
-            self.emailTextField.text = paymentData.email
+        let emailStr = paymentData.email
+        if emailStr?.isEmpty == false {
+            self.emailTextField.text = emailStr
         }
 
         self.payButton.setTitle("Оплатить \(paymentData.amount) \(paymentData.currency.currencySign())", for: .normal)
