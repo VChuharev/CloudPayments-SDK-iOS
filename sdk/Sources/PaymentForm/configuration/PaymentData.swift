@@ -17,6 +17,7 @@ public class PaymentData {
     private (set) var cardholderName: String?
     private (set) var description: String?
     private (set) var accountId: String?
+    private (set) var email: String?
     private (set) var invoiceId: String?
     private (set) var ipAddress: String?
     private (set) var cultureName: String?
@@ -53,22 +54,27 @@ public class PaymentData {
         self.cardholderName = cardholderName
         return self
     }
-    
+
     public func setDescription(_ description: String?) -> PaymentData {
         self.description = description
         return self
     }
-    
+
     public func setAccountId(_ accountId: String?) -> PaymentData {
         self.accountId = accountId
         return self
     }
-    
+
+    public func setEmail(_ email: String?) -> PaymentData {
+        self.email = email
+        return self
+    }
+
     public func setInvoiceId(_ invoiceId: String?) -> PaymentData {
         self.invoiceId = invoiceId
         return self
     }
-    
+
     public func setIpAddress(_ ipAddress: String?) -> PaymentData {
         self.ipAddress = ipAddress
         return self

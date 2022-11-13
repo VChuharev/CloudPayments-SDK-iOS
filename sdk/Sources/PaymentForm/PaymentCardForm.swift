@@ -40,7 +40,6 @@ public class PaymentCardForm: PaymentForm {
     public override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.emailTextField.isHidden = false
 //        self.receiptButton.onAction = {
 //            self.receiptButton.isSelected = !self.receiptButton.isSelected
 //            self.emailTextField.isHidden = !self.receiptButton.isSelected
@@ -64,6 +63,11 @@ public class PaymentCardForm: PaymentForm {
         }
 
         let paymentData = self.configuration.paymentData
+
+        self.emailTextField.isHidden = false
+        if paymentData.email != nil && !paymentData.email.isEmpty {
+            self.emailTextField.text = paymentData.email
+        }
 
         self.payButton.setTitle("Оплатить \(paymentData.amount) \(paymentData.currency.currencySign())", for: .normal)
         self.payButton.onAction = { [weak self] in
