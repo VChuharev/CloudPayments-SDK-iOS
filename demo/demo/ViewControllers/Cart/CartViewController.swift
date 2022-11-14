@@ -142,7 +142,7 @@ extension CartViewController: PaymentUIDelegate {
         print("paymentFormWillHide")
     }
     
-    func paymentFormDidHide() {
+    func paymentFormDidHide(byCloseButton: Bool) {
         print("paymentFormDidHide")
     }
 }

@@ -93,7 +93,7 @@ public class PaymentForm: BaseViewController {
     @IBAction private func onClose(_ sender: UIButton) {
         self.configuration.paymentUIDelegate.paymentFormWillHide()
         self.hide { [weak self] in
-            self?.configuration.paymentUIDelegate.paymentFormDidHide()
+            self?.configuration.paymentUIDelegate.paymentFormDidHide(byCloseButton: true)
         }
     }
     

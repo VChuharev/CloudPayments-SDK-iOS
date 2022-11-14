@@ -17,7 +17,7 @@ public protocol PaymentUIDelegate: class {
     func paymentFormWillDisplay()
     func paymentFormDidDisplay()
     func paymentFormWillHide()
-    func paymentFormDidHide()
+    func paymentFormDidHide(byCloseButton: Bool)
 }
 
 internal class PaymentDelegateImpl {
@@ -46,16 +46,16 @@ internal class PaymentUIDelegateImpl {
     func paymentFormWillDisplay() {
         self.delegate?.paymentFormWillDisplay()
     }
-    
+
     func paymentFormDidDisplay() {
         self.delegate?.paymentFormDidDisplay()
     }
-    
+
     func paymentFormWillHide() {
         self.delegate?.paymentFormWillHide()
     }
-    
-    func paymentFormDidHide() {
-        self.delegate?.paymentFormDidHide()
+
+    func paymentFormDidHide(byCloseButton: Bool) {
+        self.delegate?.paymentFormDidHide(byCloseButton: byCloseButton)
     }
 }

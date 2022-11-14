@@ -94,7 +94,7 @@ public class PaymentProcessForm: PaymentForm {
                             guard let self = self else {
                                 return
                             }
-                            self.configuration.paymentUIDelegate.paymentFormDidHide()
+                            self.configuration.paymentUIDelegate.paymentFormDidHide(byCloseButton: false)
                         }
                     }
                 }
@@ -113,7 +113,7 @@ public class PaymentProcessForm: PaymentForm {
                             guard let self = self else {
                                 return
                             }
-                            self.configuration.paymentUIDelegate.paymentFormDidHide()
+                            self.configuration.paymentUIDelegate.paymentFormDidHide(byCloseButton: false)
                         }
                     }
                 }
@@ -203,7 +203,7 @@ public class PaymentProcessForm: PaymentForm {
             guard let self = self else {
                 return
             }
-            self.configuration.paymentUIDelegate.paymentFormDidHide()
+            self.configuration.paymentUIDelegate.paymentFormDidHide(byCloseButton: false)
             completion?()
         }
     }
