@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
   spec.author       = { "Anton Ignatov" => "a.ignatov@cloudpayments.ru",
 			"Sergey Iskhakov" => "s.iskhakov@cloudpayments.ru" }
 	
-  spec.platform     = :ios, '9.0'
+  spec.platform     = :ios, '11.0'
   spec.ios.deployment_target = "11.0"
 
   spec.source       = { :git => "https://github.com/cloudpayments/CloudPayments-SDK-iOS.git", :tag => "#{spec.version}" }
